@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritma Djikstra kel 5</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- loader -->
+    <div class="bg-loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- header -->
+    <header>
+        <div class="centering">
+            <h1><a href="index.html">ALGORITMA DJIKSTRA</a></h1>
+            <ul>
+                <li class="active"><a href="dijkstra.html">DIJKSTRA ALGORITHM</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- label -->
+    <section class="label">
+        <div class="container">
+            <p>Home / Dijkstra Algorithm</p>
+        </div>
+    </section>
+
+    <!-- content -->
+    <div id="pembungkus">
+        <h1>Algoritma Djikstra</h1>
+        <div class="centering">
+            <form method="post" name="formDijkstra" onsubmit="findShortestPath(); return false;">
+                <label>Input Start Node</label>
+                <input type="text" name="startNode" placeholder="Start Node" required>
+
+                <label>Input End Node</label>
+                <input type="text" name="endNode" placeholder="End Node" required>
+
+                <button type="submit" class="button">Find Shortest Path</button>
+            </form>
+            <div>
+                <p>Hasil Jalur dan Jarak Terpendek</p>
+                <textarea id="hasilJalurDijkstra" readonly></textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2024 - Kelompok 5 PSM 22 B. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
